@@ -40,7 +40,7 @@ app.use(
   })
 );
 
-// Handle preflight requests
+// Handle preflight request
 app.options('*', cors());
 
 app.use(
