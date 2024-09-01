@@ -24,10 +24,14 @@ app.use(cookieParser());
 
 // CORS configuration
 app.use(
-	cors({
-		origin:"*",
-		credentials:true,
-	})
+	 origin: function (origin, callback) {
+            if (!origin || origin.startsWith('http://localhost') || origin.endsWith('.vercel.app')) {
+                callback(null, true);
+            } else {
+                callback(new Error('Not allowed by CORS'));
+            }
+        },
+        credentials: true,
 )
 
 app.use(
