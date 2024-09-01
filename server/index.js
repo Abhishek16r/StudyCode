@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"https://studycode-backend.onrender.com/",
+		origin:"https://studycode-fi6fp6kuu-abhishek-s-projects-e04082ac.vercel.app",
 		credentials:true,
 	})
 )
