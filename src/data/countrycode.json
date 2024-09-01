@@ -1,0 +1,34 @@
+[
+    {
+        "country": "India",
+        "code": "+91"
+    },
+    {
+        "country": "Pakistan",
+        "code": "+92"
+    },
+    {
+        "country": "Russia",
+        "code": "+7"
+    },
+    {
+        "country": "South Africa",
+        "code": "+27"
+    },
+    {
+        "country": "United Arab Emirates",
+        "code": "+971"
+    },
+    {
+        "country": "United Kingdom",
+        "code": "+44"
+    },
+    {
+        "country": "United States",
+        "code": "+1"
+    },
+    {
+        "country": "Zimbabwe",
+        "code": "+263"
+    }
+]
