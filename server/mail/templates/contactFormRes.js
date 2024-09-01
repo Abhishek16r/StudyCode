@@ -74,11 +74,9 @@ exports.contactUsEmail = (
     
     <body>
         <div class="container">
-            <a href="https://studycode.vercel.app">
-                <img class="logo"
+            <img class="logo"
                     src="https://res.cloudinary.com/de8bkgb1l/image/upload/v1725033601/Mail-logo_l85mxu.png" 
                     alt="StudyCode Logo">
-            </a>
             <div class="message">Contact Form Confirmation</div>
             <div class="body">
                 <p>Dear ${firstname} ${lastname},</p>
