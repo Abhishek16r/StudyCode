@@ -1,4 +1,4 @@
-# StudyCode Online Education Platform (MERN App) [Website Link](https://studynotion-frontend.vercel.app/)
+# StudyCode Online Education Platform (MERN App) [Website Link](https://studycode.vercel.app)
 
 ## Project Description
 
