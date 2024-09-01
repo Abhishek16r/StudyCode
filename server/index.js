@@ -24,13 +24,7 @@ app.use(cookieParser());
 
 // CORS configuration
 app.use(
-	 origin: function (origin, callback) {
-            if (!origin || origin.startsWith('http://localhost') || origin.endsWith('.vercel.app')) {
-                callback(null, true);
-            } else {
-                callback(new Error('Not allowed by CORS'));
-            }
-        },
+	origin: "http://localhost:3000",
         credentials: true,
 )
 
