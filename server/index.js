@@ -21,12 +21,27 @@ database.connect();
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
+
+// CORS configuration
 app.use(
-	cors({
-		origin:"https://studycode-fi6fp6kuu-abhishek-s-projects-e04082ac.vercel.app",
-		credentials:true,
-	})
-)
+  cors({
+    origin: function (origin, callback) {
+      const allowedOrigins = [
+        'https://studycode.vercel.app',
+        'https://studycode-fi6fp6kuu-abhishek-s-projects-e04082ac.vercel.app',
+      ];
+      if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    },
+    credentials: true,
+  })
+);
+
+// Handle preflight requests
+app.options('*', cors());
 
 app.use(
 	fileUpload({
